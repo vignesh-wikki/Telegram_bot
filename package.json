@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
     "prod": "node server.js",
-    "build": "webpack --config webpack.config.js"
+    "build": "npm install -D webpack-cli && webpack --config webpack.config.js"
   },
   "author": "Vignesh",
   "license": "ISC",
