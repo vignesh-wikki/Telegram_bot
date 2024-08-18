@@ -1,15 +1,15 @@
 const { Telegraf, session } = require("telegraf");
-const startQuiz = require("../../routes/startQuiz");
-const nextQuestion = require("../../routes/nextQuestion");
+const startQuiz = require("../routes/startQuiz");
+const nextQuestion = require("../routes/nextQuestion");
 const bot = new Telegraf(process.env.BOT_TOKEN);
 bot.use(session());
-const startOfBot = require("../../routes/startOfBot");
+const startOfBot = require("../routes/startOfBot");
 
-const { stopTimer } = require("../../utils/timer");
+const { stopTimer } = require("../utils/timer");
 
-const Userscore = require("../../routes/score");
+const Userscore = require("../routes/score");
 
-const poll = require("../../routes/poll");
+const poll = require("../routes/poll");
 
 let correctIndexAnswer = -1;
 let numberOfQuestions = 0;
