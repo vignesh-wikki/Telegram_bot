@@ -3,10 +3,10 @@ const app = express();
 
 require("dotenv").config();
 
-const connectDB = require("./db/db");
+const connectDB = require("../db/db");
 connectDB();
 
-const startBot = require("./bot/botStart");
+const startBot = require("../bot/botStart");
 startBot();
 
 app.get("/", async (req, res) => {res.send("telegram bot")});
